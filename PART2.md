@@ -263,6 +263,12 @@ XMLの生成
 
 #### 11.11 Active Recordクラス
 
+***
+【Note】
+
+CodeIgniter 3.0からActive RecordはQuery Builderに名称変更されました。
+***
+
 11.11.1 データの検索
 
 データ検索の実行

@@ -180,6 +180,16 @@ C:\CodeIgniter\application\config\config.php
 
 CodeIgniter 2.0より、`application`フォルダは`system`フォルダと同じ階層に変更されています。
 
+【Note】P.53
+
+CodeIgniter 3.0より、クラスファイルの先頭は大文字とする規約になりました。
+
+~~~
+time_message.php
+↓
+Time_message.php
+~~~
+
 【Note】P.54
 
 CodeIgniter 2.0より、コントローラは、`CI_Controller`クラスを継承するように変更されています。
@@ -319,6 +329,12 @@ class Sample01 extends CI_Controller {
 
 4.2.2 コントローラの命名規則
 
+***
+【Note】P.80
+
+CodeIgniter 3.0より、クラスファイルの先頭は大文字とする規約になりました。クラス名が「Sample」の場合は、ファイル名は「Sample.php」とします。
+***
+
 4.2.3 コントローラのメソッド
 
 4.2.4 デフォルトメソッド
@@ -394,6 +410,10 @@ class Model_name extends CI_Model {
 ~~~
 
 コンストラクタもコントローラのコンストラクタと同じく、`__construct()`、`parenet::__construct()`とします。
+
+【Note】P.109
+
+CodeIgniter 3.0より、クラスファイルの先頭は大文字とする規約になりました。クラス名が「Model_name」の場合は、ファイル名は「Model_name.php」とします。
 ***
 
 4.4.2 モデルの利用準備
@@ -625,6 +645,8 @@ $subject = mb_convert_mimeheader($subject, 'ISO-2022-JP');
 ↓
 $subject = mb_convert_encoding($subject, 'ISO-2022-JP', 'UTF-8');
 ~~~
+
+CodeIgniter 3.0ではISO-2022-JPのメールを作成するにはEmailライブラリを変更する必要があります。
 ***
 
 7.3.9 完了ページのビューを作成する
@@ -875,6 +897,8 @@ $subject = mb_convert_mimeheader($subject, $config['charset']);
 ↓
 $subject = mb_convert_encoding($subject, $config['charset'], $this->config->item('charset'));
 ~~~
+
+CodeIgniter 3.0ではISO-2022-JPのメールを作成するにはEmailライブラリを変更する必要があります。
 ***
 
 注文完了ページのビューを作成する
