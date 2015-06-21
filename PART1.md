@@ -990,7 +990,6 @@ PEAR::OLE
 【Note】
 
 * 参考: CodeIgniter2.XでSimpleLoginを使う http://1bit.mobi/20110327190631.html
-* 参考: DA AuthをCodeIgniter2.0.xで使う方法 http://goo.gl/HYlqZ
 * 参考: CodeIgniter 3.0で認証ライブラリIon Authを使う http://blog.a-way-out.net/blog/2015/06/08/codeigniter-ion-auth/
 
 ***
