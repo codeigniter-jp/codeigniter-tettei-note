@@ -379,7 +379,9 @@ class Sample07 extends CI_Controller {
 【Note】P.94
 
 変更されてます。
-参考: http://codeigniter.jp/user_guide_ja/general/reserved_names.html
+
+* CodeIgniter 2.0: http://codeigniter.jp/user_guide_ja/general/reserved_names.html
+* CodeIgniter 3.0: http://www.codeigniter.com/user_guide/general/reserved_names.html
 ***
 
 #### 4.3 ビュー
