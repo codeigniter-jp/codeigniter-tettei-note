@@ -174,11 +174,11 @@ C:\CodeIgniter\application\config\config.php
 ***
 【Note】P.53
 
-CodeIgniter 2.0より、applicationフォルダはsystemフォルダと同じ階層に変更されています。
+CodeIgniter 2.0より、`application`フォルダは`system`フォルダと同じ階層に変更されています。
 
 【Note】P.54
 
-CodeIgniter 2.0より、コントローラは、CI_Controllerクラスを継承するように変更されています。
+CodeIgniter 2.0より、コントローラは、`CI_Controller`クラスを継承するように変更されています。
 
 ~~~
 class Time_message extends Controller {
@@ -212,15 +212,15 @@ class Time_message extends CI_Controller {
 
 CodeIgniter 2.0からフォルダ構成が以下のように変更されています。
 
-* applicationフォルダはsystemフォルダと同じ階層に移動されました
-* cache、logsフォルダはapplicationフォルダ内に移動されました
-* applicationフォルダにthird_partyフォルダが新設されました
-* plugins、scaffoldingフォルダは機能の廃止に伴い削除されました
-* system/librariesフォルダ内にあったコアクラスのファイルは、system/coreフォルダが新設され、そこに移動されました
+* `application`フォルダは`system`フォルダと同じ階層に移動されました
+* `cache`、`logs`フォルダは`application`フォルダ内に移動されました
+* `application`フォルダに`third_party`フォルダが新設されました
+* `plugins`、`scaffolding`フォルダは機能の廃止に伴い削除されました
+* `system/libraries`フォルダ内にあったコアクラスのファイルは、`system/core`フォルダが新設され、そこに移動されました
 
 【Note】P.64
 
-CodeIgniter 3.0からは、application/errorsフォルダはapplication/views/errorsに移動し、またCLI用のエラーテンプレートが追加されました。
+CodeIgniter 3.0からは、`application/errors`フォルダは`application/views/errors`に移動し、またCLI用のエラーテンプレートが追加されました。
 ***
 
 3.4.1 systemディレクトリ
@@ -262,7 +262,8 @@ scaffolding（スカフォールディング）ディレクトリ
 ***
 【Note】P.69
 
-PHPエラー表示の設定はENVIRONMENT定数で標準で制御されるようになりました。
+PHPエラー表示の設定は`ENVIRONMENT`定数で標準で制御されるようになりました。
+
 参考: http://codeigniter.jp/user_guide_ja/general/environments.html
 ***
 
@@ -271,7 +272,8 @@ PHPエラー表示の設定はENVIRONMENT定数で標準で制御されるよう
 ***
 【Note】P.70
 
-複数環境のサポートにより、開発用と本番用の設定ファイルを別々に作成することができるようになっています。次のdatabase.phpも同様です。
+複数環境のサポートにより、開発用と本番用の設定ファイルを別々に作成することができるようになっています。次の`database.php`も同様です。
+
 参考: http://codeigniter.jp/user_guide_ja/libraries/config.html#environments
 ***
 
@@ -288,7 +290,7 @@ PHPエラー表示の設定はENVIRONMENT定数で標準で制御されるよう
 ***
 【Note】P.72
 
-logs、cacheフォルダはapplicationフォルダに移動されました。
+`logs`、`cache`フォルダは`application`フォルダに移動されました。
 ***
 
 ### Chapter 4 CodeIgniterのMVCモデル
@@ -302,7 +304,7 @@ logs、cacheフォルダはapplicationフォルダに移動されました。
 ***
 【Note】P.79
 
-CodeIgniter 2.0より、コントローラは、CI_Controllerクラスを継承するように変更されています。
+CodeIgniter 2.0より、コントローラは、`CI_Controller`クラスを継承するように変更されています。
 
 ~~~
 class Sample01 extends Controller {
@@ -330,7 +332,7 @@ class Sample01 extends CI_Controller {
 ***
 【Note】P.91
 
-コンストラクタメソッドは、PHP5のコンストラクタ__construct()とし、親クラスのコンストラクタはparent::__construct()で呼び出すように変更します。
+コンストラクタメソッドは、PHP5のコンストラクタ`__construct()`とし、親クラスのコンストラクタは`parent::__construct()`で呼び出すように変更します。
 
 ~~~
 class Sample07 extends Controller {
@@ -379,7 +381,7 @@ class Sample07 extends CI_Controller {
 ***
 【Note】P.108
 
-モデルはCI_Modelを継承するように変更されました。
+モデルは`CI_Model`を継承するように変更されました。
 
 ~~~
 class Model_name extends Model {
@@ -387,7 +389,7 @@ class Model_name extends Model {
 class Model_name extends CI_Model {
 ~~~
 
-コンストラクタもコントローラのコンストラクタと同じく、__construct()、parenet::__construct()とします。
+コンストラクタもコントローラのコンストラクタと同じく、`__construct()`、`parenet::__construct()`とします。
 ***
 
 4.4.2 モデルの利用準備
@@ -444,7 +446,7 @@ GET、POST、およびクッキーデータ
 ***
 【Note】P.129
 
-CodeIgniter 2.0以降は、$_GETが標準で使えるようになりました。
+CodeIgniter 2.0以降は、`$_GET`が標準で使えるようになりました。
 ***
 
 register_globals
@@ -461,6 +463,7 @@ XSSフィルタリング
 【Note】P.131
 
 バリデーション（検証）クラスは、CodeIgniter 1.7より新しいフォームバリデーション（検証）クラスに変更されています。
+
 参考: http://codeigniter.jp/user_guide_ja/libraries/form_validation.html
 ***
 
@@ -481,7 +484,7 @@ XSSフィルタリング
 ***
 【Note】P.139
 
-プラグインは廃止されました。ヘルパーを使いましょう。
+プラグインは廃止されました。ヘルパーを使ってください。
 ***
 
 6.2.1 プラグインの利用準備
@@ -499,7 +502,7 @@ XSSフィルタリング
 ***
 【Note】
 
-参考: CI的にCodeIgniter 2.xで、iPhone/Androidなどスマートフォンを判別する方法http://goo.gl/ON4b7
+参考: CI的にCodeIgniter 2.xで、iPhone/Androidなどスマートフォンを判別する方法 http://goo.gl/ON4b7
 ***
 
 6.3.5 独自プリフィックスの設定
@@ -552,6 +555,7 @@ XSSフィルタリング
 【Note】
 
 以下のリポジトリでこのアプリをCodeIgniter 3.0.0対応にアップデートしています。
+
 https://github.com/kenjis/codeigniter-tettei-apps
 ***
 
@@ -591,6 +595,7 @@ CodeIgniter 3.0より、セッションデータはデフォルトでサーバ�
 【Note】P.178
 
 CodeIgniter 2.0より、自動CSRF保護機能が追加されています。
+
 参考: http://codeigniter.jp/user_guide_ja/libraries/security.html
 ***
 
@@ -607,7 +612,8 @@ CodeIgniter 2.0より、自動CSRF保護機能が追加されています。
 ***
 【Note】P.189
 
-件名の処理の仕様がCodeIgniter 1.7.1から変更されているため、$subjectがこのままだと文字化けします。
+件名の処理の仕様がCodeIgniter 1.7.1から変更されているため、`$subject`がこのままだと文字化けします。
+
 参考: http://www.yamanoi.org/blog/2011-07-18/
 
 ~~~
@@ -625,6 +631,7 @@ $subject = mb_convert_encoding($subject, 'ISO-2022-JP', 'UTF-8');
 【Note】
 
 以下のリポジトリでこのアプリをCodeIgniter 3.0.0対応にアップデートしています。
+
 https://github.com/kenjis/codeigniter-tettei-apps
 ***
 
@@ -684,6 +691,7 @@ CodeIgniter 3.0からActive RecordはQuery Builderに名称変更されました
 【Note】P.212
 
 CodeIgniter 2.0からは文字エンコードのチェックがシステムの初期化時に行なわれるため、それ以前に文字エンコードの変換をする必要があります。
+
 参考: http://d.hatena.ne.jp/taramonera/20110720/1311127617
 ***
 
@@ -719,6 +727,7 @@ captcha_check()メソッドを作成する
 【Note】
 
 以下のリポジトリでこのアプリをCodeIgniter 3.0.0対応にアップデートしています。
+
 https://github.com/kenjis/codeigniter-tettei-apps
 ***
 
@@ -749,7 +758,7 @@ https://github.com/kenjis/codeigniter-tettei-apps
 ***
 【Note】P.249
 
-CodeIgniter 2.0からは$_GETが標準で使えるため、検索キーワードはGETで渡すように変更した方がよいです。
+CodeIgniter 2.0からは`$_GET`が標準で使えるため、検索キーワードはGETで渡すように変更した方がよいです。
 ***
 
 セッションデータの暗号化
@@ -798,6 +807,7 @@ Scaffoldingの使い方
 【Note】P.266
 
 CodeIgniter 1.7.2よりカートクラスが追加されましたので、このカートクラスを使うのもよいでしょう。
+
 参照: http://codeigniter.jp/user_guide_ja/libraries/cart.html
 ***
 
@@ -852,7 +862,8 @@ CodeIgniter 1.7.2よりカートクラスが追加されましたので、この
 ***
 【Note】P.288
 
-件名の処理の仕様がCodeIgniter 1.7.1から変更されているため、$subjectがこのままだと文字化けします。
+件名の処理の仕様がCodeIgniter 1.7.1から変更されているため、`$subject`がこのままだと文字化けします。
+
 参考: http://www.yamanoi.org/blog/2011-07-18/
 
 ~~~
@@ -948,6 +959,7 @@ PEAR::OLE
 【Note】
 
 参考: CodeIgniter2.XでSimpleLoginを使う http://1bit.mobi/20110327190631.html
+
 参考: DA AuthをCodeIgniter2.0.xで使う方法 http://goo.gl/HYlqZ
 ***
 
