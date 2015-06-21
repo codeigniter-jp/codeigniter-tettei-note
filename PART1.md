@@ -375,14 +375,15 @@ class Sample07 extends CI_Controller {
 
 4.2.9 予約済みメソッド名
 
-___
+***
 【Note】P.94
 
 変更されてます。
 
 * CodeIgniter 2.0: http://codeigniter.jp/user_guide_ja/general/reserved_names.html
 * CodeIgniter 3.0: http://www.codeigniter.com/user_guide/general/reserved_names.html
-___
+
+***
 
 #### 4.3 ビュー
 
