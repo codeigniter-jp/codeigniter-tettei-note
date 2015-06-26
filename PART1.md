@@ -862,6 +862,14 @@ CodeIgniter 1.7.2よりカートクラスが追加されましたので、この
 
 検索結果ページのビューを作成する
 
+***
+【Note】P.277
+
+リスト9.28にXSS脆弱性が発見されています。[正誤表](http://www.seshop.com/book/errata/9185/list)を確認してください。
+
+参照: http://blog.a-way-out.net/blog/2015/06/23/codeigniter-tetti-xss/
+***
+
 9.2.10 お客様情報入力ページを作成する
 
 お客様情報入力ページのビューを作成する
