@@ -109,6 +109,8 @@ GNU/Linux環境
 【Note】 P.30
 
 CodeIgniter 2.0からは、CodeIgniter本体と日本語言語パックをまとめた「日本語言語パック All in One パッケージ」のみが日本CodeIgniterユーザ会よりリリースされています。
+
+CodeIgniter 3.0のシステムメッセージの言語ファイルの翻訳は本家の <https://github.com/bcit-ci/codeigniter3-translations> からダウンロードできます。
 ***
 
 手順3　CodeIgniterを設定する
