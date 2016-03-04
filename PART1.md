@@ -297,6 +297,14 @@ PHPエラー表示の設定は`ENVIRONMENT`定数で標準で制御されるよ�
 
 手順5　「.htaccess」の変更
 
+***
+【Note】P.71
+
+`mbstring.internal_encoding`および`mbstring.http_input`はPHP 5.6で非推奨になりました。
+
+参考: http://php.net/manual/ja/mbstring.configuration.php
+***
+
 手順6　ソースファイルをサーバに転送
 
 手順7　セキュリティ強化の設定
